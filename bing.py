@@ -17,7 +17,7 @@ class Config(object):
 jvbot = Client("bot", Config.API_ID, Config.API_HASH, bot_token=Config.BOT_TOKEN)
 
 class Bing:
-    def __init__(self, query, limit, adult='on', filter='', client: Client = None, verbose: bool=True,):
+    def __init__(self, query, limit, adult='off', filter='', client: Client = None, verbose: bool=True,):
         self.download_count = 0
         self.query = query
         self.adult = adult
