@@ -64,6 +64,7 @@ class Bing:
             self.download_count += 1
             if self.verbose:
                 print("[+] Uploaded image.")
+            await asyncio.sleep(1)
         except (FloodWait, FloodPremiumWait) as e:
             print(f"[!] FloodWait: {e.value}")
             await asyncio.sleep(e.value)
