@@ -66,7 +66,7 @@ class Bing:
                 print("[+] Uploaded image.")
         except (FloodWait, FloodPremiumWait) as e:
             print(f"[!] FloodWait: {e.value}")
-            await asyncio.sleep(e.x)
+            await asyncio.sleep(e.value)
             return await self.save_image(link)
         except Exception as e:
             print(f"[!] Error: {e}")
