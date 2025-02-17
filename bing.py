@@ -8,11 +8,11 @@ from pyrogram.errors import FloodPremiumWait, FloodWait
 from pyrogram.types import Message
 
 class Config(object):
-    API_ID = 0
-    API_HASH = ""
-    CHANNEL_ID = 0
-    BOT_TOKEN = ""
-    AUTH_USERS = [1204927413]
+    API_ID = 2992000
+    API_HASH = "235b12e862d71234ea222082052822fd"
+    CHANNEL_ID = -1002463705087
+    BOT_TOKEN = "7470662339:AAGnk3kBpPlZRwyIvI_uplduavaQziUNCUQ"
+    AUTH_USERS = [7197823043]
 
 jvbot = Client("bot", Config.API_ID, Config.API_HASH, bot_token=Config.BOT_TOKEN)
 
